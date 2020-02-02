@@ -1,6 +1,8 @@
 import re
 
 text_to_search = '''
+[111th Congress Public Law 148]
+[From the U.S. Government Printing Office]
 abcdefghijklmnopqurtuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 1234567890
@@ -27,10 +29,9 @@ sentence = 'Start a sentence and then bring it to an end'
 pattern = re.compile(r"[a-zA-Z]+('s)?") # re.I)
 
 splitText = text_to_search.split("\n")
+splitTextr = text_to_search.split(r"[a-zA-Z]+('s)?")
 
 matches = pattern.finditer(text_to_search)
 
 for match in matches:
-    print(match)
-
-print(splitText)
+    print(match[0])
