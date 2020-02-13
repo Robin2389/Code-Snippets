@@ -1,0 +1,29 @@
+This an example of how to split C++ code into multiple files, using header files.
+Resource: http://cse230.artifice.cc/lecture/splitting-code.html
+
+
+Tips:
+Something to keep in mind, start with the mentality of splitting up the code, don't write code
+then try to split it up.
+
+Use ifndef, def method to avoid defining the multiples of the same header file. Additionally,
+use no caps naming convention for files, and when calling using ifndef command, use all caps.
+
+Ex. Header file blah.h
+
+#ifndef BLAH_H
+#define BLAH_H
+...
+#endif
+
+Compiling a project that has multiple files:
+The .h files don’t need to be compiled; they will be included by the .cpp files. But the .cpp files do need to be compiled, each separately, and then “linked” together into a grand final program.
+
+How this is done depends on which tools you are using. If you are on the “command line” and using g++, you can do this:
+
+g++ -c rectangle.cpp
+g++ -c ellipse.cpp
+g++ -c main.cpp
+g++ -o myprogram rectangle.o ellipse.o main.o
+
+The first three lines compile each .cpp file separately (producing a corresponding .o file). The fourth line links all the .o files together to create the final program.

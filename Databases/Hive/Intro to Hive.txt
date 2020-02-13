@@ -1,0 +1,24 @@
+##Introduction to Hive
+
+#History of how it came about:
+  Facebook started with Hadoop to handle large amounts of data.
+  Hadoop uses MapReduce for processing data. MapReduce required users to write long codes.
+  Not all programmers could write in Java
+  Users were happy with using SQL
+  Hive has the vision of using SQL as their because users are most comforable working with it
+  HiveQL language evolved from this need.
+
+#Basic Flow
+  User writes Hive queries to Hive
+    -User could be a business person or a technical perso
+  Hive uses Hadoop Map Reduce to handle the queries ` 1:`
+
+#Architecture of Hive
+  Hive Client, Hive Services Processing and Resource Management, and Distrubted Storage
+
+  Hive Client
+    Thrift Application  ->  Hive Thrift  Client
+    JDBC (Java Database Connection) -> Hive JDBC Driver
+    ODBC Application -> Hive ODBC Driver
+
+  Any connection can be found in any language (python, r, java, spark, C++)

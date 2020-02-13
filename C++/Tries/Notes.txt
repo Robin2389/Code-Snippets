@@ -1,0 +1,20 @@
+Trie Practice in C++
+
+Background information about a trie:
+  Tries are data structures which support insertions of k length word in O(k) time.
+  Supports searching of a k length word in O(k) time.
+  Many other custom functions like number of words with a given prefix, can be implemented.
+
+In the example trie in this folder, the following is implemented:
+  void insert (string word)
+    This inserst the given word into the Trie
+  bool search (string word)
+    search for a given word in the trie and return true or false
+  int words_with_prefix (string prefix)
+    find a count of words in the trie which has the given word as prefix_count
+
+
+
+  --------------------
+  Thank you AlgoKing
+  https://www.youtube.com/watch?v=gfqS5nUH9ew

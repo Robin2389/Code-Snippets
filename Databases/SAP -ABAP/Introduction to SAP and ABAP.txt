@@ -1,0 +1,29 @@
+This is an introduction to SAP and ABAP
+Thank you Ivyprotech Software Solutions
+https://www.youtube.com/watch?v=0NaNShUTwYY
+
+SAP uses HANA
+
+HANA has three main process
+  DP - Data Provisioning
+  DM - Data Modeling
+  DR - Data Reporting
+
+There are two types of systems:
+  OLTP - Online Transaction Processing
+  OLAP - Online Analytics systems
+
+OLTP: SAP Ultra Business system is an OLTP system
+    We create transactions we right systems.
+
+OLAP: This is reading data to perform analytics.
+
+
+
+Let's look at the databases:
+  SAP ERP database
+    Written in MSSQL or something like this
+
+This gets put into a HANA systems
+  In order to get transfered into a HANA system, the data must be provisioned
+    STP is an example DP Software
